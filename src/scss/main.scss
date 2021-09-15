@@ -23,12 +23,12 @@ $gray: #E5E5E5;
 // @import 'modules/modules.scss';
 // @import 'space';
 @import 'additional';
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 
 .bg-dark_fix{
   height: 1255px;
 }
+
 
 .section-dark {
   height: 920px;
@@ -117,6 +117,7 @@ $gray: #E5E5E5;
     font-weight: normal;
     font-size: 40px;
     text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
     span{
       color: $blue;
     }
@@ -124,19 +125,262 @@ $gray: #E5E5E5;
   // .offer__text
   &__text {
     font-size: 24px;
+    margin: 0px 0px 50px 0px;
     color: $white;
   }
   // .offer__card
   &__card {}
   // .offer__add-quest
   &__add-quest {}
+  // .offer__container
+  &__container{
+    max-width: 1280px;
+    height: 790px;
+    text-align: start;
+    background-color: rgba(0, 144, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
-.offer-card {
-  // .offer-card__content
-  &__content {}
+h2{
+  margin-bottom: 0!important;
+}
+
+.dr__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px!important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.dr__title__left {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 67px;
+  padding-right: 20px;
+  margin: 0px 0px 7px 0px;
+  color: $white;
+
+}
+
+.dr__title__center {
+  color: $blue;
+  font-size: 160px;
+  line-height: 155px;
+  font-weight: 900;
+}
+
+.dr__title__right {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0px 0px 10px 0px;
+  color: $white;
+}
+
+.dr__title__right strong {
+  color: $blue;
+  font-size: 50px;
+}
+
+.dr__list {
+  list-style-type: none;
+  counter-reset: list1;
+  font-size: 18px;
+  position: relative;
+  span{
+    margin: 0px 0px 0px 30px;
+    color: $white;
+  }
+}
+
+.dr__list li {
+  position: relative;
+  margin-bottom: 40px;
+  line-height: 25px;
+
+}
+
+.dr__list li strong {
+  color: $blue;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0 0 0 30px;
+}
+
+.dr__list li::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -11px;
+  width: 3px;
+  bottom: -50px;
+  background-color: $blue;
+  z-index: 1;
+}
+
+.dr__list li:first-child::after {
+  top: 15px;
+}
+
+.dr__list li:last-child::after {
+  bottom: 70%;
+}
+
+.dr__list li::before {
+  z-index: 2;
+  counter-increment: list1;
+  content: counter(list1);
+  position: absolute;
+  bottom: 0;
+  top: 5px;
+  left: -31px;
+  background-color: $blue;
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 3px;
 }
 
 
+.dr__price{
+  display: flex;
+  justify-content: space-around;
+  width: 630px;
+  position: relative;
+  //dr__price__left
+  &__left{
+    &:before{
+    content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 2px;
+    }
+    &:after{
+    content: "";
+        position: absolute;
+        left: 47%;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #fff;
+        
+    }
+  }
+  //dr__price__right
+  &__right{}
+}
+.dr__price__title {
+  color: $blue;
+  font-weight: 900;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.dr__price__day {
+  margin: 0;
+  color: $white;
+  font-size: 20px;
+}
+
+.dr__price__cost {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0;
+  color: $white;
+}
+
+.dr__price__cost span {
+  font-size: 15px;
+}
+
+.dr__price__additional {
+  margin: 0;
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 900;
+  color: $white;
+}
+
+.dr__price__description {
+  font-size: 17px;
+  line-height: 1;
+  color: $white;
+}
+.gap{
+  width: 20px;
+  background-color: #000;
+}
+
+.add-quest {
+  color: $white;
+  // .add-quest__title
+  &__title {
+    margin: 0 auto;
+    color: $blue;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  // .add-quest__fl
+  &__fl {
+    display: flex;
+    justify-content: center;
+  }
+  // .add-quest__table
+  &__table {}
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  // .table__head
+  &__head {
+    display: flex;
+  }
+  // .table__body
+  &__body {
+    display: flex;
+  }
+}
+.table-head {
+  // .table-head_left
+  &_left {}
+  // .table-head_right
+  &_right {}
+}
+.table-body {
+  // .table-body__text
+  &__text {}
+  // .table-body__day-price
+  &__day-price {}
+  // .table-body__holiday-price
+  &__holiday-price {}
+}
+.gap {
+}
 
 
 
