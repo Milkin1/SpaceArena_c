@@ -34,6 +34,11 @@ $blue: #0090FF;
   padding: 0!important;
   z-index: -1;
 }
+@media (min-width: 1440px) {
+  .container{
+    max-width: 1280px!important;
+  }
+}
 // =============переопределение стилей
 
 
@@ -50,7 +55,17 @@ $blue: #0090FF;
 .container {
 }
 .header-bg{
-  background: url(../images/desktop/bg_grig_d.png) center no-repeat, url(../images/desktop/bg_flash_d.jpg) center no-repeat, $black;
+  background: url(../images/desktop/bg_grig_d.png) 100% 350px/140% 35% no-repeat,url(../images/desktop/bg_flash_d.jpg) center/200% 70% no-repeat, $black;
+  @media (min-width: 767.99px) {
+    background: url(../images/desktop/bg_grig_d.png) 100% 275px/100% 50% no-repeat,url(../images/desktop/bg_flash_d.jpg) center/200% 70% no-repeat, $black;
+  }
+  @media (min-width: 1023.99px) {
+    background: url(../images/desktop/bg_grig_d.png) 100% 175px/100% 70% no-repeat,url(../images/desktop/bg_flash_d.jpg) center/200% 70% no-repeat,#000;
+  }
+  @media (min-width: 1199.99px) {
+    background: url(../images/desktop/bg_grig_d.png) 100% 175px/100% 75% no-repeat,url(../images/desktop/bg_flash_d.jpg) center/200% 70% no-repeat,#000;
+  
+  }
 }
 
 .hentry {
@@ -59,9 +74,11 @@ $blue: #0090FF;
 .entry-header {
   margin-top: -60px;
   text-align: center;
+  
 }
 .entry-title {
   font-size: 29px;
+  color: $white;
   span{
     color: $blue;
     font-weight: bold;
@@ -71,14 +88,47 @@ $blue: #0090FF;
   text-align: center;
   font-size: 17px;
   line-height: 20px;
+  color: $white;
 }
 .banner {
+  picture{
+    @media (min-width: 767.99px) {
+      width: 50%;
+    }
+    @media (min-width: 1439.99px) {
+      width: 60%;
+      padding-left: 150px;
+    }
+    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 767.99px) {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  @media (min-width: 1439.99px) {
+    justify-content: space-between;
+  }
 		// .banner__title
 		&__title {
+      margin: 20px 0px 0px 0px;
       text-align: center;
-      font-size: 24px;
+      font-size: 27px;
+      color: $white;
+      width: 205px;
       span{
         color: $blue;
+      }
+      @media (min-width: 479.99px) {
+        width: 370px;
+        font-size: 35px;
+      }
+      @media (min-width: 1023.99px) {
+        margin: 60px 0px 0px 0px;
+        width: 500px;
+        font-size: 42px;
+        text-align: left;
       }
     }
 }
