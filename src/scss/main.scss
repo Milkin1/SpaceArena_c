@@ -133,11 +133,12 @@ $blue: #0090FF;
     }
 }
 
-//==================== Секция с карточками ================
+//==================== Секция с карточками и таблицами ================
 .bg-dark{
   background-color: #000;
 }
 .offer {
+  margin: 0px 0px 130px 0px;
   // .offer__title
   &__title {
     color: $white;
@@ -894,5 +895,126 @@ h2{
     grid-template-columns: minmax(300px, auto) 200px 200px;
     bottom: 0px;
   }
+}
+
+
+
+//========================= Anchor ========================
+.anchor-section{
+}
+.grid-bg {
+  @media (min-width: 1023.99px) {
+    background: url(../images/desktop/bg_grig_d.png) center no-repeat;
+    background-size: 100% 100%;
+    height: 750px;
+  }
+}
+.anchor-grid {
+  display: none;
+  position: relative;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (min-width: 1023.99px) {
+    display: grid;
+    grid-template: repeat(2, 324px) / repeat(3, 200px);
+    gap: 20px;
+    height: 667px;
+    width: 640px;
+  }  
+  @media (min-width: 1439.99px) {
+    width: 800px;
+    grid-template: repeat(2, 324px) / repeat(3, 253px);
+  }
+  // .anchor-grid__1
+  &__1 {
+    @media (min-width: 1023.99px) {
+      grid-area: 1/1/2/2;
+    }
+  }
+  // .anchor-grid__2
+  &__2 {
+    @media (min-width: 1023.99px) {
+      grid-area: 1/3/2/4;
+    }
+  }
+  // .anchor-grid__3
+  &__3 {
+    @media (min-width: 1023.99px) {
+      grid-area: 2/1/4/2;
+      align-self: start;
+    }
+  }
+  // .anchor-grid__4
+  &__4 {
+    @media (min-width: 1023.99px) {
+      grid-area: 1/2/3/3;
+    }
+  }
+  // .anchor-grid__5
+  &__5 {
+    @media (min-width: 1023.99px) {
+      grid-area: 2/3/3/4;
+    }
+  }
+}
+
+.anchor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (min-width: 1023.99px) {
+    align-items: center;
+    height: 750px;
+  }
+		// .anchor__grid
+		&__grid {}
+		// .anchor__links
+		&__links {
+      @media (min-width: 767.99px) {
+        width: 400px;
+      }
+      @media (min-width: 1439.99px) {
+        width: 325px;
+      }
+      h2{
+        color: $blue;
+        font-size: 30px;
+        margin: 0px 0px 35px 0px!important;
+        @media (min-width: 767.99px) {
+          font-size: 40px;
+        }
+        @media (min-width: 1023.99px) {
+          display: none;
+        }
+      }
+      ul{
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+          li{
+          list-style-type: none;
+          font-weight: bold;
+          padding: 15px 0px;
+          margin-bottom: 20px;
+          @media (min-width: 767.99px) {
+            font-size: 25px;
+          }
+          @media (min-width: 1023.99px) {
+            font-size: 20px;
+          }
+          a{
+            color: $white;
+          }
+        }
+      }
+    }
 }
 
