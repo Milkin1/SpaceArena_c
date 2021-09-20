@@ -187,12 +187,18 @@ $blue: #0090FF;
     align-items: center;
     @media (min-width: 767.99px) {
     height: 1510px;
-  }
-  @media (min-width: 1439.99px) {
-    width: 1280px;
-    height: 815px;
-    flex-direction: row;
-  }
+    }
+    @media (min-width: 1023.99px) {
+      flex-direction: row;
+      width: 890px;
+      height: 100%;
+    }
+
+    @media (min-width: 1439.99px) {
+      width: 1280px;
+      height: 815px;
+      flex-direction: row;
+    }
   
   }
 }
@@ -206,6 +212,14 @@ $blue: #0090FF;
     width: 630px;
     height: 813px;
   }
+  @media (min-width: 1023.99px) {
+    width: 440px;
+    height: 715px;
+  }
+  @media (min-width: 1439.99px) {
+    width: 630px;
+    height: 813px;
+  }
 }
 .second-card{
   background-color: rgba(117, 117, 117, 0.2);
@@ -215,6 +229,14 @@ $blue: #0090FF;
     width: 440px;
   }
   @media (min-width: 767.99px) {
+    width: 630px;
+    height: 813px;
+  }
+  @media (min-width: 1023.99px) {
+    width: 440px;
+    height: 715px;
+  }
+  @media (min-width: 1439.99px) {
     width: 630px;
     height: 813px;
   }
@@ -246,6 +268,12 @@ h2{
   @media (min-width: 767.99px) {
     width: 630px;
   }
+  @media (min-width: 1023.99px) {
+    width: 440px;
+  }
+  @media (min-width: 1439.99px) {
+    width: 630px;
+  }
 }
 
 .dr__title__left {
@@ -257,11 +285,18 @@ h2{
   color: $white;
   @media (min-width: 479.99px) {
     font-size: 40px;
-  }
-  @media (min-width: 479.99px) {
     margin: 0px 50px 2px 0px;
   }
   @media (min-width: 767.99px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0px 0px 2px 0px;
+  }
+  @media (min-width: 1023.99px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  @media (min-width: 1439.99px) {
     font-size: 60px;
     line-height: 60px;
     margin: 0px 0px 2px 0px;
@@ -281,6 +316,14 @@ h2{
     font-size: 160px;
     margin: 0px 0px 24px 0px;
   }
+  @media (min-width: 1023.99px) {
+    font-size: 100px;
+    margin: 0px 0px 0px 0px;
+  }
+  @media (min-width: 1439.99px) {
+    font-size: 160px;
+    margin: 0px 0px 24px 0px;
+  }
 }
 
 .dr__title__right {
@@ -293,6 +336,13 @@ h2{
     margin: 0px 0px 3px 0px;
   }
   @media (min-width: 767.99px) {
+    font-size: 40px;
+    margin: 0px 0px 2px 0px;
+  }
+  @media (min-width: 1023.99px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1439.99px) {
     font-size: 40px;
     margin: 0px 0px 2px 0px;
   }
@@ -335,6 +385,9 @@ h2{
   @media (min-width: 767.99px) {
     width: 580px;
     margin-bottom: 40px;
+  }
+  @media (min-width: 1023.99px) {
+    width: 390px;
   }
 }
 
@@ -406,6 +459,12 @@ h2{
   @media (min-width: 767.99px) {
     width: 630px;
   }
+  @media (min-width: 1023.99px) {
+    width: 440px;
+  }
+  @media (min-width: 1439.99px) {
+    width: 630px;
+  }
   //dr__price__left
   &__left{
     @media (min-width: 479.99px) {
@@ -427,6 +486,12 @@ h2{
         width: 440px;
       }
       @media (min-width: 767.99px) {
+        width: 630px;
+      }
+      @media (min-width: 1023.99px) {
+        width: 440px;
+      }
+      @media (min-width: 1439.99px) {
         width: 630px;
       }
     }
@@ -466,6 +531,12 @@ h2{
   @media (min-width: 767.99px) {
     font-size: 24px;
   }
+  @media (min-width: 1023.99px) {
+    font-size: 17px;
+  }
+  @media (min-width: 1439.99px) {
+    font-size: 24px;
+  }
 }
 
 .dr__price__day {
@@ -484,6 +555,12 @@ h2{
     font-size: 30px;
   }
   @media (min-width: 767.99px) {
+    font-size: 50px;
+  }
+  @media (min-width: 1023.99px) {
+    font-size: 30px;
+  }
+  @media (min-width: 1439.99px) {
     font-size: 50px;
   }
 }
