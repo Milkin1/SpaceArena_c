@@ -899,10 +899,11 @@ h2{
 
 
 
-//========================= Anchor ========================
+//========================= Секция с якорными ссылками ========================
 .anchor-section{
 }
 .grid-bg {
+  margin: 0px 0px 100px 0px;
   @media (min-width: 1023.99px) {
     background: url(../images/desktop/bg_grig_d.png) center no-repeat;
     background-size: 100% 100%;
@@ -1004,17 +1005,184 @@ h2{
           font-weight: bold;
           padding: 15px 0px;
           margin-bottom: 20px;
+          background-color: $blue;
           @media (min-width: 767.99px) {
             font-size: 25px;
           }
           @media (min-width: 1023.99px) {
             font-size: 20px;
           }
+          &:hover{
+          }
           a{
             color: $white;
+            cursor: pointer;
           }
         }
       }
     }
 }
+
+
+//============================= Секция описания услуг ================================
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  // .services__title
+  &__title {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px!important;
+    @media (min-width: 1023.99px) {
+      margin: 0px 0px 70px 0px!important;
+    }
+    span{
+      color: $blue;
+    }
+  }
+  // .services__subtitle
+  &__subtitle {}
+  // .services__dropdown
+  &__dropdown {}
+}
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1023.99px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0px 0px 50px 0px;
+  }
+  @media (min-width: 1439.99px) {
+    width: 1280px;
+  }
+  // .subtitle__img
+  &__img {
+    width: 90%;
+    margin: 0px 0px 15px 0px;
+    @media (min-width: 479.99px) {
+      width: 412px;
+    }
+  }
+  // .subtitle__article
+  &__article {
+    @media (min-width: 1023.99px) {
+      width: 450px;
+    }
+    @media (min-width: 1439.99px) {
+      width: 750px;
+    }
+  }
+}
+.article-mobile{
+  @media (min-width: 1023.99px) {
+    display: none;
+  }
+}
+.article {
+  // .article__name
+  &__name {
+    display: none;
+    @media (min-width: 1023.99px) {
+      display: block;
+    }
+    @media (min-width: 1439.99px) {
+      font-size: 40px;
+    }
+  }
+  // .article__text
+  &__text {
+    font-size: 16px;
+    @media (min-width: 576.99px) {
+      width: 420px;
+    }
+    @media (min-width: 767.99px) {
+      width: 600px;
+    }
+    @media (min-width: 1023.99px) {
+      width: 450px;
+    }
+    @media (min-width: 1439.99px) {
+      font-size: 24px;
+      width: 750px;
+    }
+  }
+}
+.dropdown {
+  margin: 0px 0px 20px 0px;
+  // .dropdown__link
+  &__link {
+    font-size: 13px;
+    color: $blue;
+    position: relative;
+    margin: 0px 0px 20px 0px;
+    @media (min-width: 1023.99px) {
+      font-size: 16px;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 60px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 6px 0 6px;
+      border-color: $blue transparent transparent transparent;
+      @media (min-width: 479.99px) {
+        right: 130px;
+      }
+      @media (min-width: 1023.99px) {
+        top: 9px;
+        right: 170px;
+      }
+    }
+  }
+  // .dropdown__content
+  &__content {
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // .content__box
+  &__box {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #001f36;
+    margin: 0px 0px 10px 0px;
+    @media (min-width: 479.99px) {
+      width: 450px;
+    }
+    @media (min-width: 1023.99px) {
+      width: 550px;
+    }
+  }
+  // .content__number
+  &__number {
+    font-weight: bold;
+      color: $blue;
+      font-size: 20px;
+      margin: 0px 30px 0px 5px;
+      @media (min-width: 1023.99px) {
+        font-size: 30px;
+      }
+    }
+  // .content__text
+  &__text {
+    font-size: 16px;
+    @media (min-width: 1023.99px) {
+      font-size: 30px;
+    }
+  }
+}
+
 
