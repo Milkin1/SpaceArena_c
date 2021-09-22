@@ -1,6 +1,29 @@
 
   @use 'sass:math';
 
+
+@mixin btn-reset {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+  &:focus {
+    outline: none;
+  }
+	&::-moz-focus-outer{
+		border: 0;
+		padding: 0;
+	}
+	&::-moz-focus-inner{
+		border: 0;
+		padding: 0;
+	}
+}
+
+
 //   @import 'components/base';  
 //   @import 'components/_var';   
 //    @import 'components/header/header';
@@ -20,11 +43,16 @@
 $white: #fff;
 $black: #000;
 $blue: #0090FF;
+$gray: #C4C4C4;
 // ===========переменный
 
 
 
 // переопределение стилей
+html{
+  scroll-behavior: smooth;
+}
+
 #navigation{
   top: 0!important;
 }
@@ -32,7 +60,9 @@ $blue: #0090FF;
   position: relative;
   background: $black!important;
   padding: 0!important;
-  z-index: -1;
+}
+.section-gray{
+  background: $gray;
 }
 @media (min-width: 1440px) {
   .container{
@@ -68,7 +98,7 @@ $blue: #0090FF;
 }
 
 .hentry {
-  margin: 100px 0px 0px 0px;
+  margin: 120px 0px 0px 0px;
 }
 .entry-header {
   margin-top: -60px;
@@ -1005,24 +1035,56 @@ h2{
           font-weight: bold;
           padding: 15px 0px;
           margin-bottom: 20px;
-          background-color: $blue;
           @media (min-width: 767.99px) {
             font-size: 25px;
           }
           @media (min-width: 1023.99px) {
             font-size: 20px;
           }
-          &:hover{
-          }
           a{
-            color: $white;
+            position: relative;
             cursor: pointer;
+            span{
+              position: relative;
+              color: $white;
+            }
+            &:hover:before{
+              opacity: 1;
+              transition: all 0.5s ease 0s;
+            }
+            &:before{
+              content: "";
+              background-color: $blue;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              padding: 30px 150px;
+              box-shadow: 1px 2px 38px 0px rgba(0,144,255,0.5);
+              opacity: 0;
+              transition: all 0.5s ease 0s;
+              @media (min-width: 767.99px) {
+                padding: 30px 200px;
+              }
+              @media (min-width: 1023.99px) {
+                padding: 30px 120px;
+              }
+              @media (min-width: 1200px) {
+                padding: 30px 180px;
+              }
+            }
           }
         }
       }
     }
 }
 
+.show {
+display: block!important;
+}
 
 //============================= Секция описания услуг ================================
 
@@ -1045,9 +1107,19 @@ h2{
   // .services__subtitle
   &__subtitle {}
   // .services__dropdown
-  &__dropdown {}
+  &__dropdown {
+    position: relative;
+  }
+}
+.anchor-link{
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: -70px;
+  opacity: 0;
 }
 .subtitle {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1116,6 +1188,7 @@ h2{
   margin: 0px 0px 20px 0px;
   // .dropdown__link
   &__link {
+    @include btn-reset;
     font-size: 13px;
     color: $blue;
     position: relative;
@@ -1127,18 +1200,15 @@ h2{
       content: "";
       position: absolute;
       top: 6px;
-      right: 60px;
+      right: -20px;
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 10px 6px 0 6px;
       border-color: $blue transparent transparent transparent;
-      @media (min-width: 479.99px) {
-        right: 130px;
-      }
       @media (min-width: 1023.99px) {
-        top: 9px;
-        right: 170px;
+        top: 10px;
+        right: -25px;
       }
     }
   }
@@ -1151,6 +1221,14 @@ h2{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 1100px 50px 1100px;
+  background-color: $black;
   // .content__box
   &__box {
     display: flex;
@@ -1185,4 +1263,113 @@ h2{
   }
 }
 
+//====================== Секция квест комната================
+
+.quest {
+  // .quest__content
+  &__content {}
+  // .quest__dropdown
+  &__dropdown {}
+}
+.quest-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 767.99px) {
+    flex-direction: row;
+    padding: 60px 0px 0px 0px;
+  }
+  @media (min-width: 1023.99px) {
+    justify-content: space-between;
+  }
+  // .quest-content_img
+  &_img {
+    margin: 0px 0px 20px 0px;
+    width: 300px;
+    img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  // .quest-content__title
+  &__title {
+    font-size: 30px;
+    margin: 0px auto 20px auto!important;
+    padding: 50px 0px 0px 0px;
+    @media (min-width: 767.99px) {
+      display: none;
+    }
+  }
+  // .quest-content__text
+  &__text {
+    font-size: 20px;
+    @media (min-width: 767.99px) {
+      width: 390px;
+      padding: 0px 10px 0px 10px;
+    }
+    @media (min-width: 1023.99px) {
+      width: 550px;
+    }
+  }
+}
+.quest-dropdown {
+  // .quest-dropdown__link
+  &__link {
+    @include btn-reset;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+    font-size: 13px;
+    color: #0090ff;
+    position: relative;
+    margin: 0 0 20px 0;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -20px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 6px 0 6px;
+      border-color: #0090ff transparent transparent transparent;
+    }
+  }
+  // .quest-dropdown__content
+  &__content {}
+}
+.quest-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // .quest-dropdown-content__title
+  &__title {}
+  // .quest-dropdown-content__text
+  &__text {}
+  // .quest-dropdown-content__popup-btn
+  &__popup-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.popup-btn {
+  // .popup-btn__suit
+  &__suit {
+    @include btn-reset;
+    
+  }
+  // .popup-btn__actor
+  &__actor {
+    @include btn-reset;
+  }
+}
 
