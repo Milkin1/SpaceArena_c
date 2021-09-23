@@ -29,6 +29,8 @@ window.onclick = function (event) {
   }
 }
 
+
+
 function questDropdown() {
   document.getElementById("quest-dropdownlist").classList.toggle("show");
 }
@@ -36,7 +38,25 @@ function questDropdown() {
 // Закройте выпадающее меню, если пользователь щелкает за его пределами
 window.onclick = function (event) {
   if (!event.target.matches('.quest-dropdown__link')) {
-    var dropdowns = document.getElementsByClassName("quest-dropdown-content");
+    var dropdowns = document.getElementsByClassName("animation_content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function animationDropdown() {
+  document.getElementById("quest-dropdownlist").classList.toggle("show");
+}
+
+// Закройте выпадающее меню, если пользователь щелкает за его пределами
+window.onclick = function (event) {
+  if (!event.target.matches('.animation_drop')) {
+    var dropdowns = document.getElementsByClassName("quest-dropdown");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

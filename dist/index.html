@@ -292,26 +292,34 @@
 	</div>
 	<main role="main">
 		<div class="wrapper">
-			<section class="header">
-				<div class="header-bg ">
-					<div class="container">
-						<article id="post-1041" class="post-1041 page type-page status-publish hentry">
-							<header class="entry-header">
-								<h1 class="entry-title">замов свій, <span>унікальный</span><br> день народження!</h1>
-							</header>
-							<article class="entry-content">
-								<p>Space Arenа і її партнери розробили комплексне рішення в організації свята.</p>
-							</article>
-							<div class="banner">
-								<picture>
-									<source srcset="images/desktop/header_children_d.png" media="(min-width: 767.99px)">
-									<img src="images/mobile/header_children_m.png" alt="">
-								</picture>
-								<div class="banner__title">Рекомендуємо найкраще свято для дітей віком <br><span>від 5 до 8 років</span></div>
-							</div>
+			<section class="header section-dark">
+				<div class="container">
+					<picture class="flash-bg">
+						<source srcset="images/mobile/bg_flash_m.jpg" media="(max-width: 959.99px)">
+						<img src="images/desktop/bg_flash_d.jpg" alt="">
+					</picture>
+					<picture class="grid-bgg">
+						<source srcset="images/desktop/bg_grig_d.png" media="(max-width: 959.99px)">
+						<img src="images/desktop/bg_grig_d.png" alt="">
+					</picture>
+
+					<article id="post-1041" class="post-1041 page type-page status-publish hentry">
+						<header class="entry-header">
+							<h1 class="entry-title">замов свій, <span>унікальный</span><br> день народження!</h1>
+						</header>
+						<article class="entry-content">
+							<p>Space Arenа і її партнери розробили комплексне рішення в організації свята.</p>
 						</article>
-					</div>
+						<div class="banner">
+							<picture>
+								<source srcset="images/desktop/header_children_d.png" media="(min-width: 767.99px)">
+								<img src="images/mobile/header_children_m.png" alt="">
+							</picture>
+							<div class="banner__title">Рекомендуємо найкраще свято для дітей віком <br><span>від 5 до 8 років</span></div>
+						</div>
+					</article>
 				</div>
+
 			</section>
 <section class="birsday-choose">
 
@@ -324,7 +332,10 @@
 					<div class="first-card">
 						<!-- Первая карточка -->
 						<div class="dr__hero">
-							<h2 class="dr__title"><span class="dr__title__left">СВЯТКОВА <br>ПРОГРАМА </span><span class="dr__title__center">2</span><span class="dr__title__right"><strong>15</strong>хв. <br>години </span></h2>
+							<h2 class="dr__title">
+								<span class="dr__title__left">СВЯТКОВА <br>ПРОГРАМА </span>
+								<span class="dr__title__center">2</span>
+								<span class="dr__title__right"><strong>15</strong>хв. <br>години </span></h2>
 							<ul class="dr__list">
 								<li><strong>Гра в лазертаг<br></strong><span>(1 година. Три сеанси по 15 хв. з перервами по 5 хв.)</span></li>
 								<li><strong>Тематична анімаційна програма <br></strong><span>(1 година)</span></li>
@@ -486,6 +497,7 @@
 			</div>
 
 		</section>
+
 		<section class="service-explain">
     <div class="grid-bg">
         <div class="anchor-section">
@@ -502,8 +514,8 @@
                         <h2>Список послуг</h2>
                         <ul>
                             <li><a href="#lasertag"><span>Лазертаг</span></a></li>
-                            <li><a href="javascript:void(0);"><span>Квест кімната</span></a></li>
-                            <li><a href="javascript:void(0);"><span>Анімаційна програма</span></a></li>
+                            <li><a href="#quest_room"><span>Квест кімната</span></a></li>
+                            <li><a href="#animation"><span>Анімаційна програма</span></a></li>
                             <li><a href="javascript:void(0);"><span>7D кінотеатр</span></a></li>
                             <li><a href="javascript:void(0);"><span>Супровід</span></a></li>
                         </ul>
@@ -514,85 +526,213 @@
     </div>
 </section>
 		<section class="services">
-    <h2 class="services__title"> <span>опис послуг</span> до Дня народження</h2>
-    <div class="services__subtitle subtitle">
-        <div id="lasertag" class="anchor-link"></div>
-        <h3 class="article-mobile">Лазертаг</h3>
-        <img class="subtitle__img" src="images/desktop/laser_boy.jpg" alt="">
-        <div class="subtitle__article article">
-            <h3 class="article__name">Лазертаг</h3>
-            <p class="article__text">Охочих зануритися в світ космосу і здійснити подорож на космічному кораблі. А також, відчути себе справжніми героями в лазерному бої - замовте гру в Space Arena.
-                Ви отримаєте незабутні враження від проведеного часу.
-                Протягом 3 раундів ваша дитина буде розвивати швидкість реакції, влучність у стрільбі з лазерної зброї, вміння працювати в команді та досягати поставленої мети.
-                Насолоджуйтесь емоціями дитини і ловите захоплення гостей!
-            </p>
+    <div class="container">
+        <h2 class="services__title"> <span>опис послуг</span> до Дня народження</h2>
+        <div class="services__subtitle subtitle">
+            <!-- ссылка для прокрутки -->
+            <div id="lasertag" class="anchor-link"></div>
+            <h3 class="article-mobile">Лазертаг</h3>
+            <img class="subtitle__img" src="images/desktop/laser_boy.jpg" alt="">
+            <div class="subtitle__article article">
+                <h3 class="article__name">Лазертаг</h3>
+                <p class="article__text">Охочих зануритися в світ космосу і здійснити подорож на космічному кораблі. А також, відчути себе справжніми героями в лазерному бої - замовте гру в Space Arena.
+                    Ви отримаєте незабутні враження від проведеного часу.
+                    Протягом 3 раундів ваша дитина буде розвивати швидкість реакції, влучність у стрільбі з лазерної зброї, вміння працювати в команді та досягати поставленої мети.
+                    Насолоджуйтесь емоціями дитини і ловите захоплення гостей!
+                </p>
+            </div>
+        </div>
+
+
+        <div class="services__dropdown">
+            <button type="button" onclick="anchoreDropdown()" class="dropdown__link">Список сценаріїв гри</button>
+            <div id="dropdownlist" class="dropdown__content content">
+                <div class="content__box">
+                    <div class="content__number">1</div>
+                    <div class="content__text">Відродження на базі</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">2</div>
+                    <div class="content__text">Захоплення бази</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">3</div>
+                    <div class="content__text">Снайпери Hard</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">4</div>
+                    <div class="content__text">Снайпери</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">5</div>
+                    <div class="content__text">Захоплення контрольної точки</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">5</div>
+                    <div class="content__text">Вампіри</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">7</div>
+                    <div class="content__text">Кожен сам за себе</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">8</div>
+                    <div class="content__text">Командна гра</div>
+                </div>
+
+
+            </div>
         </div>
     </div>
 
-
-    <div class="services__dropdown">
-        <button type="button" onclick="anchoreDropdown()" class="dropdown__link">Список сценаріїв гри</button>
-        <div id="dropdownlist" class="dropdown__content content">
-            <div class="content__box">
-                <div class="content__number">1</div>
-                <div class="content__text">Відродження на базі</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">2</div>
-                <div class="content__text">Захоплення бази</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">3</div>
-                <div class="content__text">Снайпери Hard</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">4</div>
-                <div class="content__text">Снайпери</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">5</div>
-                <div class="content__text">Захоплення контрольної точки</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">5</div>
-                <div class="content__text">Вампіри</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">7</div>
-                <div class="content__text">Кожен сам за себе</div>
-            </div>
-            <div class="content__box">
-                <div class="content__number">8</div>
-                <div class="content__text">Командна гра</div>
-            </div>
-
-
-        </div>
-    </div>
 
 </section>
+
 	</section>
+
 	<section class="quest">
     <div class="section-gray">
         <h2 class="quest-content__title">квест кімната</h2>
         <div class="container">
-            <div class="quest__content quest-content">
-                <div class="quest-content_img"><img src="images/desktop/quest.jpg" alt=""></div>
-                <div class="quest-content__text">Квест-кімната - популярна розвага серед дітей, де вони проведуть час весело та з користю! Тут є своя атмосфера, загадки і захоплюючі механізми. Кожен квест з певною тематикою і сюжетом, які точно сподобаються імениннику і гостям!</div>
+            <div class="position-fix">
+                <!-- ссылка для прокрутки -->
+                <div id="quest_room" class="anchor-link"></div>
+
+                <div class="quest__content quest-content">
+                    <div class="quest-content_img"><img src="images/desktop/quest.jpg" alt=""></div>
+                    <div class="quest-content__text">Квест-кімната - популярна розвага серед дітей, де вони проведуть час весело та з користю! Тут є своя атмосфера, загадки і захоплюючі механізми. Кожен квест з певною тематикою і сюжетом, які точно сподобаються імениннику і гостям!</div>
+                </div>
             </div>
             <div class="quest__dropdown quest-dropdown">
                 <button type="button" onclick="questDropdown()" class="quest-dropdown__link">Тематика в квест-кімнаті</button>
-                <div id="quest-dropdownlist" class="quest-dropdown__content quest-dropdown-content">
-                    <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
-                    <p class="quest-dropdown-content__text">1. Підземелля. Скарби гномів
-                        Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
-                        Вам належить відшукати скарб царя гномів і оволодіти його силою!
-                    </p>
-                    <div class="quest-dropdown-content__popup-btn popup-btn">
-                        <button type="button" class="popup-btn__suit">Переглянути костюм</button>
-                        <button type="button" class="popup-btn__actor">Додайте актора</button>
+                <div id="quest-dropdownlist" class="quest-drop">
+                    <div class="quest-dropdown__content quest-dropdown-content">
+                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
+                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
+                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
+                        </p>
+                        <div class="quest-dropdown-content__popup-btn popup-btn">
+                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
+                            <button type="button" class="popup-btn__actor">Додайте актора</button>
+                        </div>
+                    </div>
+                    <div class="quest-dropdown__content quest-dropdown-content">
+                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
+                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
+                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
+                        </p>
+                        <div class="quest-dropdown-content__popup-btn popup-btn">
+                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
+                            <button type="button" class="popup-btn__actor">Додайте актора</button>
+                        </div>
+                    </div>
+                    <div class="quest-dropdown__content quest-dropdown-content">
+                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
+                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
+                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
+                        </p>
+                        <div class="quest-dropdown-content__popup-btn popup-btn">
+                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
+                            <button type="button" class="popup-btn__actor">Додайте актора</button>
+                        </div>
+                    </div>
+                    <div class="quest-dropdown__content quest-dropdown-content">
+                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
+                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
+                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
+                        </p>
+                        <div class="quest-dropdown-content__popup-btn popup-btn">
+                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
+                            <button type="button" class="popup-btn__actor">Додайте актора</button>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="animation section-dark">
+    <div class="container">
+        <h2 class="animation__title"> <span>анімаційна програма </h2>
+        <div class="services__subtitle subtitle">
+            <div id="animation" class="anchor-link"></div>
+            <img class="animation__img" src="images/desktop/animation.jpg" alt="">
+            <div class="subtitle__article article">
+                <p class="article__text">
+                    За 45 хвилин гри, ваша дитина пограє і на автоматах, і візьме участь в естафетах і рішення головоломок.
+                    Програма проходить в кілька етапів і зі своїм унікальним завданням, за успішне виконання якого, діти отримують ключ і переходять до іншого етапу.
+                    З кожним пройденим етапом гравці беруть міні-перемогу справляючись з тієї чи іншої головоломкою.
+                    Ця послуга є невід'ємною частиною яскравого і незабутнього дня народження вашої дитини.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="services__dropdown">
+            <button type="button" onclick="animationDropdown()" class="dropdown__link animation-dropdown-link animation_drop">Ознайомитись з програмами</button>
+            <div id="dropdownlist" class="dropdown__content content animation_content">
+                <div class="content__box">
+                    <div class="content__number">1</div>
+                    <div class="content__text">Піратський квест «Острів скарбниць»</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">2</div>
+                    <div class="content__text">Пригоди Жасмін и Аладдіна</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">3</div>
+                    <div class="content__text">Магія фей</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">4</div>
+                    <div class="content__text">Школа магії «Monster High»</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">5</div>
+                    <div class="content__text">Холодне серце. Пригоди Анни та Эльзи</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">6</div>
+                    <div class="content__text">Лего Ніндзяго</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">7</div>
+                    <div class="content__text">Мафія. План: «Чорний пістолет»</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">8</div>
+                    <div class="content__text">Beyblade Burst Turbo</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">9</div>
+                    <div class="content__text">Minecraft</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">10</div>
+                    <div class="content__text">Brawl Stars</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">11</div>
+                    <div class="content__text">Insta Party</div>
+                </div>
+                <div class="content__box">
+                    <div class="content__number">12</div>
+                    <div class="content__text">Insta Party</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="movie section-gray">
+    <div class="container">
+        <div class="grid-container">
+            <div class="movie__content">
+                <div class="movie__title">7D кінотеатр</div>
+                <div class="movie__img"><img src="images/desktop/7D.jpg" alt=""></div>
+                <p class="movie__text">15 хвилин незабутніх пригод. Нове слово в мультимедійному мистецтві — 7D-кінотеатр — дозволяє повністю зануритися в світ ілюзій і неймовірних відчуттів. Кожен глядач може поставити себе на місце головного героя і насолодитися ефектом повної присутності в фільмі. Глядач може не тільки бачити і чути, але і відчувати пориви вітру або сніжної бурі, дощ і туман, блискавки і землетруси, вібрації і падіння і навіть запахи. Якщо за сюжетом покладається летіти — в цьому допоможуть рухливі платформи, на яких розміщують глядачів.
+                    В програму входять два мультфільми на вибір дітей.
+                </p>
             </div>
         </div>
     </div>
