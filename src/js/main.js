@@ -4,11 +4,6 @@ const html = document.querySelector("html");
 const header = document.querySelector(".header");
 const navBtn = document.querySelector(".nav__btn");
 
-window.onload = function () {
-  pagescroll();
-};
-
-
 
 
 function anchoreDropdown() {
@@ -38,7 +33,7 @@ function questDropdown() {
 // Закройте выпадающее меню, если пользователь щелкает за его пределами
 window.onclick = function (event) {
   if (!event.target.matches('.quest-dropdown__link')) {
-    var dropdowns = document.getElementsByClassName("animation_content");
+    var dropdowns = document.getElementsByClassName("quest-dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -50,13 +45,13 @@ window.onclick = function (event) {
 }
 
 function animationDropdown() {
-  document.getElementById("quest-dropdownlist").classList.toggle("show");
+  document.getElementById("animation-dropdownlist").classList.toggle("show");
 }
 
 // Закройте выпадающее меню, если пользователь щелкает за его пределами
 window.onclick = function (event) {
-  if (!event.target.matches('.animation_drop')) {
-    var dropdowns = document.getElementsByClassName("quest-dropdown");
+  if (!event.target.matches('.animation-dropdown__link')) {
+    var dropdowns = document.getElementsByClassName("animation-dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

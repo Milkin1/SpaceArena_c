@@ -516,8 +516,8 @@
                             <li><a href="#lasertag"><span>Лазертаг</span></a></li>
                             <li><a href="#quest_room"><span>Квест кімната</span></a></li>
                             <li><a href="#animation"><span>Анімаційна програма</span></a></li>
-                            <li><a href="javascript:void(0);"><span>7D кінотеатр</span></a></li>
-                            <li><a href="javascript:void(0);"><span>Супровід</span></a></li>
+                            <li><a href="#7dcinema"><span>7D кінотеатр</span></a></li>
+                            <li><a href="#suppport"><span>Супровід</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -545,7 +545,7 @@
 
 
         <div class="services__dropdown">
-            <button type="button" onclick="anchoreDropdown()" class="dropdown__link">Список сценаріїв гри</button>
+            <button type="button" onclick="anchoreDropdown()" class="dropdown__link">Список сценаріїв гри<span></span></button>
             <div id="dropdownlist" class="dropdown__content content">
                 <div class="content__box">
                     <div class="content__number">1</div>
@@ -604,7 +604,7 @@
                 </div>
             </div>
             <div class="quest__dropdown quest-dropdown">
-                <button type="button" onclick="questDropdown()" class="quest-dropdown__link">Тематика в квест-кімнаті</button>
+                <button type="button" onclick="questDropdown()" class="quest-dropdown__link">Тематика в квест-кімнаті<span></span> </button>
                 <div id="quest-dropdownlist" class="quest-drop">
                     <div class="quest-dropdown__content quest-dropdown-content">
                         <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
@@ -612,38 +612,8 @@
                             Вам належить відшукати скарб царя гномів і оволодіти його силою!
                         </p>
                         <div class="quest-dropdown-content__popup-btn popup-btn">
-                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
-                            <button type="button" class="popup-btn__actor">Додайте актора</button>
-                        </div>
-                    </div>
-                    <div class="quest-dropdown__content quest-dropdown-content">
-                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
-                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
-                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
-                        </p>
-                        <div class="quest-dropdown-content__popup-btn popup-btn">
-                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
-                            <button type="button" class="popup-btn__actor">Додайте актора</button>
-                        </div>
-                    </div>
-                    <div class="quest-dropdown__content quest-dropdown-content">
-                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
-                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
-                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
-                        </p>
-                        <div class="quest-dropdown-content__popup-btn popup-btn">
-                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
-                            <button type="button" class="popup-btn__actor">Додайте актора</button>
-                        </div>
-                    </div>
-                    <div class="quest-dropdown__content quest-dropdown-content">
-                        <h3 class="quest-dropdown-content__title">1. Підземелля. Скарби гномів</h3>
-                        <p class="quest-dropdown-content__text">Підземелля, в якому століттями збирали свої багатства хитрі, підприємливі гноми. Велика частина цих скарбів вже викрадена шукачами скарбів. Але де найголовніша цінність - кільце Царя гномів, яке робить багатим того, хто до нього доторкнеться, так до сих пір і не відомо ...
-                            Вам належить відшукати скарб царя гномів і оволодіти його силою!
-                        </p>
-                        <div class="quest-dropdown-content__popup-btn popup-btn">
-                            <button type="button" class="popup-btn__suit">Переглянути костюм</button>
-                            <button type="button" class="popup-btn__actor">Додайте актора</button>
+                            <a href="#image" class="popup-btn__suit popup-link">Переглянути костюм</a>
+                            <a href="#text" class="popup-btn__actor popup-link">Додайте актора</a>
                         </div>
                     </div>
                 </div>
@@ -670,8 +640,8 @@
 
 
         <div class="services__dropdown">
-            <button type="button" onclick="animationDropdown()" class="dropdown__link animation-dropdown-link animation_drop">Ознайомитись з програмами</button>
-            <div id="dropdownlist" class="dropdown__content content animation_content">
+            <button type="button" onclick="animationDropdown()" class="animation-dropdown__link">Ознайомитись з програмами<span></span></button>
+            <div id="animation-dropdownlist" class="dropdown__content content animation-dropdown-content">
                 <div class="content__box">
                     <div class="content__number">1</div>
                     <div class="content__text">Піратський квест «Острів скарбниць»</div>
@@ -720,6 +690,8 @@
                     <div class="content__number">12</div>
                     <div class="content__text">Insta Party</div>
                 </div>
+
+                <a href="suit.html" class="link_to_suit">Переглянути костюми</a>
             </div>
         </div>
     </div>
@@ -727,6 +699,7 @@
 	<section class="movie section-gray">
     <div class="container">
         <div class="grid-container">
+            <div id="7dcinema" class="anchor-link"></div>
             <div class="movie__content">
                 <div class="movie__title">7D кінотеатр</div>
                 <div class="movie__img"><img src="images/desktop/7D.jpg" alt=""></div>
@@ -737,6 +710,21 @@
         </div>
     </div>
 </section>
+	<section class="movie section-dark">
+    <div class="container">
+        <div class="grid-container">
+            <div id="suppport" class="anchor-link"></div>
+            <div class="movie__content">
+                <div class="movie__title title--order">супровід дітей актором</div>
+                <div class="movie__img img--order"><img src="images/desktop/suppport.jpg" alt=""></div>
+                <p class="movie__text text--order">Супровід координатором - це послуга, яка зробить щасливою всю сім'ю відразу. Адже поки діти будуть весело грати і знаходити нових друзів під дбайливим наглядом нашого координатора, їх батьки зможуть піти на шопінг, в кафе або кіно! Звучить заманливо, чи не так?
+                    За кожною групою дітей доглядає професійний координатор свята, який і познайомить діточок один з одним, і пограє, і розвеселить!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 </section>
 </div>
@@ -1177,7 +1165,39 @@ href="http://opspacearena/wp-login.php?action=logout&amp;_wpnonce=18b4c25404">В
         <jdiv class="jivoMouseTrack_745b"></jdiv>
     </jdiv>
 </jdiv> -->
+
+<!-- модальные окна -->
+<div id="text" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="javascript:void(0);" class="popup__close close-popup">&#10006;</a>
+            <p class="popup__text">За легендою хлопцям необхідно звільнити міфічна тварина-клювокрила від страти, в квесті так само є два сценарії для актора
+
+                1 - студент Хогвартса (факультет Гріффіндор), який є одним Гаррі Поттера і всіляко намагається допомогти учасникам врятувати клювокрила,
+
+                2 - зла відьма - одна з членів комісії, яка винесла вердикт про страту Гіппогріфа, це божевільна і страшна відьма, яка намагається перешкодити учасникам квесту врятувати тварину.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="image" class="popup">
+    <div class="popup__body">
+        <div class="popup__content popup__content_image">
+
+            <a href="javascript:void(0);" class="popup__close close-popup">&#10006;</a>
+            <div class="popup__image">
+                <img src="images/desktop/alice.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- модальные окна -->
+
+
 <script src="js/main.js"></script>
+<script src="js/popap.js"></script>
 </body>
 
 </html>
