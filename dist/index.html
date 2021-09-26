@@ -226,7 +226,7 @@
 	<link rel="stylesheet" href="./Дитячий день народження у Харкові — Space Arena_files/widget.css">
 </head>
 
-<body class="page-template-default page page-id-1041 logged-in admin-bar  customize-support">
+<body id="body" class="page-template-default page page-id-1041 logged-in admin-bar  customize-support">
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFPJDC7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
@@ -321,7 +321,7 @@
 				</div>
 
 			</section>
-<section class="birsday-choose section-dark">
+<div class="birsday-choose section-dark">
 
 	<section class="offer-cards">
 		<div class="container">
@@ -491,7 +491,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="table__img-bottom"><img src="images/desktop/laser_girl.png" alt="девочка с лазерной пушкой"></div>
+						<div class="table__img-bottom">
+							<img src="images/desktop/laser_girl.png" alt="девочка с лазерной пушкой">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -547,7 +549,7 @@
             </div>
         </div>
 
-
+        <a href="#header"></a>
         <div class="services__dropdown">
             <button type="button" onclick="anchoreDropdown()" class="dropdown__link">Список сценаріїв гри<span></span></button>
             <div id="dropdownlist" class="dropdown__content content">
@@ -594,12 +596,12 @@
 
 	<section class="quest">
     <div class="section-gray">
-        <h2 class="quest-content__title">квест кімната</h2>
+
         <div class="container">
             <div class="position-fix">
                 <!-- ссылка для прокрутки -->
                 <div id="quest_room" class="anchor-link"></div>
-
+                <h2 class="quest-content__title">квест кімната</h2>
                 <div class="quest__content quest-content">
                     <div class="quest-content_img"><img src="images/desktop/quest.jpg" alt=""></div>
                     <div class="quest-content__text">Квест-кімната - популярна розвага серед дітей, де вони проведуть час весело та з користю! Тут є своя атмосфера, загадки і захоплюючі механізми. Кожен квест з певною тематикою і сюжетом, які точно сподобаються імениннику і гостям!</div>
@@ -614,8 +616,8 @@
                             Вам належить відшукати скарб царя гномів і оволодіти його силою!
                         </p>
                         <div class="quest-dropdown-content__popup-btn popup-btn">
-                            <a href="#image" class="popup-btn__suit popup-link">Переглянути костюм</a>
-                            <a href="#text" class="popup-btn__actor popup-link">Додайте актора</a>
+                            <a href="#image" class="popup-btn__suit click">Переглянути костюм</a>
+                            <a href="#text" class="popup-btn__actor click">Додайте актора</a>
                         </div>
                     </div>
                 </div>
@@ -629,6 +631,7 @@
         <h2 class="animation__title"><span>анімаційна програма</span></h2>
         <div class="services__subtitle subtitle">
             <div id="animation" class="anchor-link"></div>
+
             <img class="animation__img" src="images/desktop/animation.jpg" alt="">
             <div class="subtitle__article article">
                 <p class="article__text">
@@ -728,7 +731,7 @@
 </section>
 
 
-</section>
+	</в>
 </div>
 </div><!-- .entry-content -->
 </article><!-- #post-1041 -->
@@ -1170,13 +1173,12 @@ href="http://opspacearena/wp-login.php?action=logout&amp;_wpnonce=18b4c25404">В
 
 <!-- модальные окна -->
 <div id="text" class="popup">
+    <a href="#!" class="popup__area click"></a>
     <div class="popup__body">
         <div class="popup__content">
-            <a href="javascript:void(0);" class="popup__close close-popup">&#10006;</a>
+            <a href="#!" class="popup__close click">&#10006;</a>
             <p class="popup__text">За легендою хлопцям необхідно звільнити міфічна тварина-клювокрила від страти, в квесті так само є два сценарії для актора
-
                 1 - студент Хогвартса (факультет Гріффіндор), який є одним Гаррі Поттера і всіляко намагається допомогти учасникам врятувати клювокрила,
-
                 2 - зла відьма - одна з членів комісії, яка винесла вердикт про страту Гіппогріфа, це божевільна і страшна відьма, яка намагається перешкодити учасникам квесту врятувати тварину.
             </p>
         </div>
@@ -1184,14 +1186,13 @@ href="http://opspacearena/wp-login.php?action=logout&amp;_wpnonce=18b4c25404">В
 </div>
 
 <div id="image" class="popup">
+    <a href="#!" class="popup__area click"></a>
     <div class="popup__body">
         <div class="popup__content popup__content_image">
-
-            <a href="javascript:void(0);" class="popup__close close-popup">&#10006;</a>
+            <a href="#!" class="popup__close click">&#10006;</a>
             <div class="popup__image">
                 <img src="images/desktop/alice.jpg" alt="">
             </div>
-
         </div>
     </div>
 </div>
@@ -1200,6 +1201,7 @@ href="http://opspacearena/wp-login.php?action=logout&amp;_wpnonce=18b4c25404">В
 
 <script src="js/main.js"></script>
 <script src="js/popap.js"></script>
+
 </body>
 
 </html>

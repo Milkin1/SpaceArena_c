@@ -768,8 +768,12 @@ h2{
       grid-auto-rows: 75px;
     }
   }
-  // .table__img
+  // .table__img-bottom
   &__img-bottom {
+    @media (min-width: 1024.99px) {
+      // position: sticky;
+      // top: 0;
+    }
     img{
       display: none;
       @media (min-width: 1023.99px) {
@@ -1207,10 +1211,10 @@ animation: fadeIn 0.8s;
   &__subtitle {}
   // .services__dropdown
   &__dropdown {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    align-items: center;
   }
 }
 .anchor-link{
@@ -1228,6 +1232,7 @@ animation: fadeIn 0.8s;
   @media (min-width: 1023.99px) {
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0px 0px 50px 0px;
   }
   @media (min-width: 1439.99px) {
@@ -1299,6 +1304,7 @@ animation: fadeIn 0.8s;
     color: $blue;
     position: relative;
     margin: 0px 0px 20px 0px;
+    width: 200px;
     @media (min-width: 1023.99px) {
       font-size: 16px;
     }
@@ -1373,7 +1379,8 @@ animation: fadeIn 0.8s;
 }
 .position-fix{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 .quest-content {
@@ -1383,9 +1390,10 @@ animation: fadeIn 0.8s;
   justify-content: center;
   @media (min-width: 767.99px) {
     flex-direction: row;
-    padding: 60px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
     @include dynamic-value("width", 670, 930, 670, 1023.99, 767.99 );
     justify-content: space-around;
+    align-items: center;
     font-size: 20px;
   }
   // .quest-content_img
@@ -1413,9 +1421,9 @@ animation: fadeIn 0.8s;
     margin: 0px auto 20px auto!important;
     padding: 50px 0px 0px 0px;
     text-transform: uppercase;
-    @media (min-width: 767.99px) {
-      display: none;
-    }
+    // @media (min-width: 767.99px) {
+    //   display: none;
+    // }
   }
   // .quest-content__text
   &__text {
@@ -1496,6 +1504,7 @@ animation: fadeIn 0.8s;
   }
   // .quest-dropdown-content__popup-btn
   &__popup-btn {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1514,6 +1523,8 @@ animation: fadeIn 0.8s;
 .popup-btn {
   // .popup-btn__suit
   &__suit {
+    cursor: pointer;
+    pointer-events: auto;
     border: 2px solid $blue;
     width: 300px;
     padding: 5px 5px;
@@ -1526,10 +1537,21 @@ animation: fadeIn 0.8s;
   }
   // .popup-btn__actor
   &__actor {
+    cursor: pointer;
+    pointer-events: auto;
     border: 2px solid $blue;
     width: 300px;
     padding: 5px 5px;
     color: $blue;
+  }
+  // .popup-btn__scroll-stop
+  &__scroll-stop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
   }
 }
 
@@ -1552,7 +1574,7 @@ animation: fadeIn 0.8s;
     color: $white;
     font-size: $fxb;
     @media (min-width: 767.99px) {
-      display: none;
+      
     }
   }
   &__img{
@@ -1561,9 +1583,9 @@ animation: fadeIn 0.8s;
     @media (min-width: 479.99px) {
       margin: 0px 0px 40px 0px;
     }
-    @media (min-width: 767.99px) {
-      padding: 70px 0px 0px 0px;
-    }
+    // @media (min-width: 767.99px) {
+    //   padding: 70px 0px 0px 0px;
+    // }
   }
 }
 .animation-dropdown__link{
@@ -1713,19 +1735,23 @@ body.lock {
 	visibility: hidden;
 	overflow-y: auto;
 	overflow-x: hidden;
-	transition: all 0.8s ease 0s;
+	transition: all 0.7s ease 0s;
   z-index: 100;
 }
-.popup.open {
+.popup:target {
 	opacity: 1;
 	visibility: visible;
+  transform: translate()
 }
-.popup.open .popup__content {
+
+.popup:target .popup__content {
 	transform: translate(0px, 0%);
 	opacity: 1;
 }
 
 .popup__area {
+  cursor: pointer;
+  opacity: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1739,8 +1765,8 @@ body.lock {
 	align-items: center;
 	justify-content: center;
 	padding: 30px 10px;
-	transition: all 0.8s ease 0s;
-  margin-top: 50px; //если есть фиксированнвй навбар
+	transition: all 0.7s ease 0s;
+  margin-top: 70px; //если есть фиксированнвй навбар
 }
 .popup__content {
 	background-color: #fff;
@@ -1748,7 +1774,7 @@ body.lock {
 	max-width: 800px;
 	padding: 30px;
 	position: relative;
-	transition: all 0.8s ease 0s;
+	transition: all 0.7s ease 0s;
 	opacity: 0;
 	transform: translate(0px, -100%);
 }
@@ -1761,6 +1787,7 @@ body.lock {
 }
 
 .popup__close {
+  cursor: pointer;
 	position: absolute;
 	right: 10px;
 	top: 10px;
