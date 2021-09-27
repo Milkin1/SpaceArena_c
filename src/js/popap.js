@@ -2,12 +2,12 @@
 
 // const click = document.querySelectorAll("click");
 const body = document.getElementById('body');
-const click = document.querySelectorAll("click");
+const clicks = document.querySelectorAll("click");
 
 
 
-document.querySelectorAll('.click').forEach(click => {
+clicks.forEach(click => {
     click.addEventListener('click', event => {
-        body.classList.toggle("lock")
+        body.classList.add("lock")
     })
 })
