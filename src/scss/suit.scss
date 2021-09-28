@@ -121,11 +121,11 @@ img {
 .adaptive-img{
     position: relative;
     display: grid;
-    grid-template-rows: minmax(250px, 360px) 40px;
+    grid-template-rows: minmax(250px, 360px) auto;
     grid-auto-columns: 260px;
     justify-items: center;
     align-items: center;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px 50px 20px;
     img{
         position: absolute;
         left: 0;
@@ -156,6 +156,7 @@ img {
             color: $white;
             font-family: Play;
             font-size: $fs;
+            padding: 10px 0px 10px 0px;
         }
     }
 }
