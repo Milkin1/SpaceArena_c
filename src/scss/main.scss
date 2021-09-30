@@ -206,6 +206,7 @@ html{
   }
   picture{
     img{
+      object-fit: cover;
       width: 290px;
       height: 390px!important;
     @media (min-width: 767.99px) {
@@ -328,6 +329,11 @@ html{
 .first-card{
   background-color: rgba(117, 117, 117, 0.2);
   width: 290px;
+  transition: all 0.5s ease 0s;
+  &:hover{
+    background-color: rgba(0, 144, 255, 0.1);
+    transition: all 0.5s ease 0s;
+  }
   @media (min-width: 479.99px) {
     width: 440px;
   }
@@ -344,6 +350,11 @@ html{
 .second-card{
   background-color: rgba(117, 117, 117, 0.2);
   width: 290px;
+  transition: all 0.5s ease 0s;
+  &:hover{
+    background-color: rgba(0, 144, 255, 0.1);
+    transition: all 0.5s ease 0s;
+  }
   @media (min-width: 479.99px) {
     width: 440px;
   }
