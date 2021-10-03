@@ -296,11 +296,11 @@
 				<h2 style="display: none;"></h2>
 				<div class="container">
 					<picture class="flash-bg">
-						<source srcset="images/mobile/bg_flash_m.jpg" media="(max-width: 959.99px)">
+						<source srcset="images/mobile/bg_flash_m.jpg" media="(max-width: 959px)">
 						<img src="images/desktop/bg_flash_d.jpg" alt="">
 					</picture>
 					<picture class="grid-bgg">
-						<source srcset="images/desktop/bg_grig_d.png" media="(max-width: 959.99px)">
+						<source srcset="images/desktop/bg_grig_d.png" media="(max-width: 959px)">
 						<img src="images/mobile/bg_grig_m.png" alt="">
 					</picture>
 
@@ -313,14 +313,21 @@
 							<p>Space Arenа і її партнери розробили комплексне рішення в організації свята.</p>
 						</article>
 						<div class="banner">
-							<picture>
-								<source srcset="images/desktop/header_children_d.png" media="(min-width: 767.99px)">
-								<img src="images/mobile/header_children_m.png" alt="">
-							</picture>
-							<!-- <figure>
-								<img src="images/desktop/header_children_d.png" alt="">
-								<figcaption></figcaption>
-							</figure> -->
+							<img class="banner__vector-5" src="images/vector/Vector-5.svg" alt="">
+							<img class="banner__vector-7" src="images/vector/Vector-7.svg" alt="">
+							<div class="banner__vectors">
+								<img class="banner__vector" src="images/vector/Vector.svg" alt="">
+								<img class="banner__vector-1" src="images/vector/Vector-1.svg" alt="">
+								<img class="banner__vector-2" src="images/vector/Vector-2.svg" alt="">
+								<img class="banner__vector-3" src="images/vector/Vector-3.svg" alt="">
+								<img class="banner__vector-4" src="images/vector/Vector-4.svg" alt="">
+								<img class="banner__vector-6" src="images/vector/Vector-6.svg" alt="">
+								<picture>
+									<source srcset="images/desktop/header_children_d.png" media="(min-width: 767px)">
+									<img src="images/mobile/header_children_m.png" alt="">
+								</picture>
+							</div>
+
 							<h2 class="banner__title">Рекомендуємо найкраще свято для дітей віком <br><span>від 5 до 8 років</span></h2>
 						</div>
 					</article>
@@ -603,13 +610,15 @@
 	<section class="quest">
     <div class="section-gray">
         <div class="container">
-            <div class="position-fix">
+            <div class="services__subtitle subtitle">
                 <!-- ссылка для прокрутки -->
                 <div id="quest_room" class="anchor-link"></div>
-                <h3 class="quest-content__title">квест кімната</h3>
-                <div class="quest__content quest-content">
-                    <div class="quest-content_img"><img src="images/desktop/quest.jpg" alt=""></div>
-                    <div class="quest-content__text">Квест-кімната - популярна розвага серед дітей, де вони проведуть час весело та з користю! Тут є своя атмосфера, загадки і захоплюючі механізми. Кожен квест з певною тематикою і сюжетом, які точно сподобаються імениннику і гостям!</div>
+                <h2 class="article-mobile text-black">квест кімната</h2>
+                <img class="subtitle__img left" src="images/desktop/quest.jpg" alt="">
+                <div class="subtitle__article article right">
+                    <h3 class="article__name text-black">квест кімната</h3>
+                    <p class="article__text text-black">Квест-кімната - популярна розвага серед дітей, де вони проведуть час весело та з користю! Тут є своя атмосфера, загадки і захоплюючі механізми. Кожен квест з певною тематикою і сюжетом, які точно сподобаються імениннику і гостям!
+                    </p>
                 </div>
             </div>
             <div class="quest__dropdown quest-dropdown">
@@ -633,14 +642,14 @@
 </section>
 	<section class="animation section-dark">
     <div class="container">
-        <h3 class="animation__title"><span>анімаційна програма</span></h3>
         <div class="services__subtitle subtitle">
+            <!-- ссылка для прокрутки -->
             <div id="animation" class="anchor-link"></div>
-
-            <img class="animation__img" src="images/desktop/animation.jpg" alt="">
+            <h2 class="article-mobile">анімаційна програма</h2>
+            <img class="subtitle__img" src="images/desktop/animation.jpg" alt="">
             <div class="subtitle__article article">
-                <p class="article__text">
-                    За 45 хвилин гри, ваша дитина пограє і на автоматах, і візьме участь в естафетах і рішення головоломок.
+                <h3 class="article__name">анімаційна програма</h3>
+                <p class="article__text">За 45 хвилин гри, ваша дитина пограє і на автоматах, і візьме участь в естафетах і рішення головоломок.
                     Програма проходить в кілька етапів і зі своїм унікальним завданням, за успішне виконання якого, діти отримують ключ і переходять до іншого етапу.
                     З кожним пройденим етапом гравці беруть міні-перемогу справляючись з тієї чи іншої головоломкою.
                     Ця послуга є невід'ємною частиною яскравого і незабутнього дня народження вашої дитини.
@@ -708,12 +717,14 @@
 </section>
 	<section class="movie section-gray">
     <div class="container">
-        <div class="grid-container">
+        <div class="services__subtitle subtitle">
+            <!-- ссылка для прокрутки -->
             <div id="7dcinema" class="anchor-link"></div>
-            <div class="movie__content">
-                <h3 class="movie__title">7D кінотеатр</h3>
-                <img class="movie__img" src="images/desktop/7D.jpg" alt="">
-                <p class="movie__text">15 хвилин незабутніх пригод. Нове слово в мультимедійному мистецтві — 7D-кінотеатр — дозволяє повністю зануритися в світ ілюзій і неймовірних відчуттів. Кожен глядач може поставити себе на місце головного героя і насолодитися ефектом повної присутності в фільмі. Глядач може не тільки бачити і чути, але і відчувати пориви вітру або сніжної бурі, дощ і туман, блискавки і землетруси, вібрації і падіння і навіть запахи. Якщо за сюжетом покладається летіти — в цьому допоможуть рухливі платформи, на яких розміщують глядачів.
+            <h2 class="article-mobile text-black">7D кінотеатр</h2>
+            <img class="subtitle__img left" src="images/desktop/7D.jpg" alt="">
+            <div class="subtitle__article article right">
+                <h3 class="article__name text-black">7D кінотеатр</h3>
+                <p class="article__text text-black">15 хвилин незабутніх пригод. Нове слово в мультимедійному мистецтві — 7D-кінотеатр — дозволяє повністю зануритися в світ ілюзій і неймовірних відчуттів. Кожен глядач може поставити себе на місце головного героя і насолодитися ефектом повної присутності в фільмі. Глядач може не тільки бачити і чути, але і відчувати пориви вітру або сніжної бурі, дощ і туман, блискавки і землетруси, вібрації і падіння і навіть запахи. Якщо за сюжетом покладається летіти — в цьому допоможуть рухливі платформи, на яких розміщують глядачів.
                     В програму входять два мультфільми на вибір дітей.
                 </p>
             </div>
@@ -722,12 +733,14 @@
 </section>
 	<section class="movie section-dark">
     <div class="container">
-        <div class="grid-container">
+        <div class="services__subtitle subtitle">
+            <!-- ссылка для прокрутки -->
             <div id="suppport" class="anchor-link"></div>
-            <div class="movie__content support__content">
-                <h3 class="movie__title support__title--order">супровід дітей актором</h3>
-                <img class="movie__img support__img--order" src="images/desktop/suppport.jpg" alt="">
-                <p class="movie__text support__text--order">Супровід координатором - це послуга, яка зробить щасливою всю сім'ю відразу. Адже поки діти будуть весело грати і знаходити нових друзів під дбайливим наглядом нашого координатора, їх батьки зможуть піти на шопінг, в кафе або кіно! Звучить заманливо, чи не так?
+            <h2 class="article-mobile">супровід дітей актором</h2>
+            <img class="subtitle__img" src="images/desktop/suppport.jpg" alt="">
+            <div class="subtitle__article article">
+                <h3 class="article__name">супровід дітей актором</h3>
+                <p class="article__text">Супровід координатором - це послуга, яка зробить щасливою всю сім'ю відразу. Адже поки діти будуть весело грати і знаходити нових друзів під дбайливим наглядом нашого координатора, їх батьки зможуть піти на шопінг, в кафе або кіно! Звучить заманливо, чи не так?
                     За кожною групою дітей доглядає професійний координатор свята, який і познайомить діточок один з одним, і пограє, і розвеселить!
                 </p>
             </div>
