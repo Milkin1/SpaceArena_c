@@ -191,6 +191,7 @@ html{
     left: 50px;
     bottom: 350px;
     width: 10%;
+    height: 7%!important;
     @media (min-width: 767px) {
       left: 50px;
       bottom: 450px;
@@ -209,6 +210,7 @@ html{
     left: 275px;
     bottom: 370px;
     width: 10%;
+    height: 7%!important;
     @media (min-width: 479px) {
       left: 330px;
       bottom: 370px;
@@ -231,6 +233,7 @@ html{
     left: 292px;
     bottom: 305px;
     width: 10%;
+    height: 7%!important;
     @media (min-width: 479px) {
       left: 355px;
       bottom: 305px;
@@ -241,7 +244,7 @@ html{
     }
     @media (min-width: 1023px) {
       left: 455px;
-    bottom: 460px;
+      bottom: 460px;
     }
     @media (min-width: 1439px) {
       left: 650px;
@@ -253,6 +256,7 @@ html{
     left: 44px;
     bottom: 237px;
     width: 12%;
+    height: 15%!important;
     @media (min-width: 767px) {
       bottom: 320px;
       left: 50px;
@@ -271,6 +275,7 @@ html{
     left: 0px;
     bottom: 300px;
     width: 12%;
+    height: 21%!important;;
     @media (min-width: 479px) {
       left: -15px;
     }
@@ -293,6 +298,7 @@ html{
       left: calc(100% - 75px);
       bottom: 250px;
       width: 105px;
+      height: 146px!important;
     }
     @media (min-width: 767px) {
       left: calc(100% + 35px);
@@ -302,14 +308,17 @@ html{
       left: calc(100% + 47px);
       bottom: 150px;
       width: 150px;
+      height: 208px!important;
     }
     @media (min-width: 1439px) {
       bottom: 160px;
       width: 170px;
+      height: 236px!important;
     }
     @media (min-width: 1919px) {
       bottom: 160px;
       width: 200px;
+      height: 277px!important;
       left: calc(100% + 165px);
     }
   }
@@ -318,6 +327,7 @@ html{
     left: -65px;
     bottom: 130px;
     width: 20%;
+    height: 15%!important;
     @media (min-width: 767px) {
       bottom: 245px;
     }
@@ -334,6 +344,7 @@ html{
     right: -22px;
     top: 115px;
     width: 20%;
+    height: 9%!important;
     @media (min-width: 575px) {
       right: -42px;
       top: 115px;
