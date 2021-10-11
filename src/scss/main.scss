@@ -1298,7 +1298,9 @@ animation: fadeIn 0.8s;
   }
 }
 //============================= Секция описания услуг ================================
-
+.icons_elder{
+  display: none;
+}
 .birsday .services {
   display: flex;
   flex-direction: column;
