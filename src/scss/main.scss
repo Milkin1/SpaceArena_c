@@ -1301,6 +1301,9 @@ animation: fadeIn 0.8s;
 .icons_elder{
   display: none;
 }
+.icons_elder1 {
+  display: none;
+}
 .birsday .services {
   display: flex;
   flex-direction: column;
@@ -1494,7 +1497,7 @@ animation: fadeIn 0.8s;
         height: 40px;
         object-fit: cover;
         border-radius: 6px;
-        margin: 0px 0px 7px 0px;
+        margin: 4px 0px 0px 0px;
       }
     }
   // .content__text
