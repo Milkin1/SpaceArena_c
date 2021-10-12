@@ -53,7 +53,7 @@ html{
 #navigation{
   top: 0!important;
 }
-.birsday .section-dark {
+.wrapper .section-dark {
   position: relative;
   background: $black;
   padding: 0;
@@ -61,7 +61,7 @@ html{
 .section-gray{
   background: $gray;
 }
-.birsday .container{
+.birsday-choose .container{
   @media (min-width: 767px) {
     max-width: 730px;
   }
@@ -72,6 +72,12 @@ html{
     max-width: 1280px;
   }
 }
+
+.wrapper h2{
+  text-align: center;
+}
+
+
 // =============переопределение стилей
 
 
@@ -145,7 +151,7 @@ html{
 }
 
 .hentry {
-  margin: 120px 0px 0px 0px;
+  margin: 150px 0px 0px 0px;
   position: relative;
 }
 .entry-header {
@@ -169,7 +175,7 @@ html{
   color: $white;
 }
 
-.birsday .banner {
+.birsday-choose .banner {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -434,13 +440,17 @@ html{
     @media (min-width: 767px) {
       font-size: 40px;
       width: 690px;
-      padding: 0px 20px;
+      padding: 0 20px 30px 20px;
+    }
+    @media (min-width: 1439px) {
+      width: 1300px;
+      margin: 0px 0px 50px 0px;
     }
   }
   // .offer__text
   &__text {
     font-size: 18px;
-    margin: 0px auto 60px auto;
+    margin: 0px auto 90px auto;
     color: $white;
     @media (min-width: 479px) {
       font-size: 20px;
@@ -508,11 +518,11 @@ html{
   background-color: $black;
   height: 20px;
 }
-.birsday h2{
+.birsday-choose h2{
   margin-bottom: 0;
 }
 
-.birsday .dr__title {
+.birsday-choose .dr__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,7 +876,7 @@ html{
 }
 
 
-.birsday .table {
+.birsday-choose .table {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1184,7 +1194,7 @@ html{
   }
 }
 
-.birsday .anchor {
+.birsday-choose .anchor {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1284,7 +1294,7 @@ html{
     }
 }
 
-.birsday .show {
+.birsday-choose .show {
 display: block;
 animation: fadeIn 0.8s;
 }
@@ -1304,7 +1314,7 @@ animation: fadeIn 0.8s;
 .icons_elder1 {
   display: none;
 }
-.birsday .services {
+.birsday-choose .services {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1358,7 +1368,11 @@ animation: fadeIn 0.8s;
     flex-direction: column;
     position: relative;
     align-items: center;
+    @media (min-width: 767px) {
+    display: flex;
   }
+  }
+  
 }
 .anchor-link{
   position: absolute;
@@ -1395,7 +1409,7 @@ animation: fadeIn 0.8s;
     }
   }
 }
-.birsday .article-mobile{
+.birsday-choose .article-mobile{
   font-size: $fxb;
   margin: 0px 0px 30px 0px;
   text-transform: uppercase;
@@ -1473,6 +1487,10 @@ animation: fadeIn 0.8s;
   background-color: $black;
   position: relative;
   z-index: 100;
+  @media (min-width: 768px) {
+    width: calc(100% - 61px);
+    flex-wrap: wrap;
+  }
   // .content__box
   &__box {
     display: flex;
@@ -1481,6 +1499,17 @@ animation: fadeIn 0.8s;
     background-color: #001f36;
     margin: 0px 0px 10px 0px;
     text-align: start;
+    @media (min-width: 767px) {
+      width: calc(100% - 329px);
+      margin: 0px 4px 10px 0px;
+      display: inline-flex;
+    }
+    @media (min-width: 990px) {
+      width: calc(100% - 450px);
+    }
+    @media (min-width: 1440px) {
+      width: calc(100% - 650px)
+    }
   }
   // .content__number
   &__number {
@@ -1488,8 +1517,11 @@ animation: fadeIn 0.8s;
       color: $blue;
       font-size: 20px;
       padding: 0px 10px 0px 5px;
+      @media (min-width: 767px) {
+        font-size: 18px;
+      }
       @media (min-width: 1023px) {
-        font-size: 30px;
+        font-size: 20px;
       }
       //иконки
       img{
@@ -1504,8 +1536,11 @@ animation: fadeIn 0.8s;
   &__text {
     font-size: 16px;
     padding: 0px 10px 0px 0px;
+    @media (min-width: 767px) {
+      font-size: 15px;
+    }
     @media (min-width: 1023px) {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 }
