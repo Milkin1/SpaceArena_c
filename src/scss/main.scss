@@ -151,17 +151,31 @@ html{
 }
 
 .hentry {
-  margin: 150px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
   position: relative;
 }
 .entry-header {
   margin-top: -60px;
   text-align: center;
-  
+  margin: 0 auto;
+  @media (min-width: 767px) {
+    width: calc(100% - 50px);
+  }
+}
+.entry-content{
+  margin: 0px 0px 50px 0px;
+  @media (min-width: 1439px) {
+    margin: 0px 0px 100px 0px;
+  }
 }
 .entry-title {
   font-size: 29px;
   color: $white;
+  margin: 0 auto;
+  width: 100%;
+  @media (min-width: 1919px) {
+    font-size: 55px;
+  }
 
   span{
     color: $blue;
