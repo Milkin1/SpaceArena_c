@@ -494,6 +494,7 @@ html{
   background-color: rgba(117, 117, 117, 0.2);
   width: 290px;
   transition: all 0.5s ease 0s;
+  padding: 15px 10px;
   &:hover{
     background-color: rgba(0, 144, 255, 0.1);
     transition: all 0.5s ease 0s;
@@ -503,12 +504,15 @@ html{
   }
   @media (min-width: 767px) {
     width: 630px;
+    padding: 20px 15px;
   }
   @media (min-width: 1023px) {
     width: 440px;
+    padding: 15px 10px;
   }
   @media (min-width: 1439px) {
     width: 630px;
+    padding: 20px 15px;
   }
 }
 
@@ -526,52 +530,53 @@ html{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin: 0px 0px 20px 0px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  width: 295px;
   justify-content: center;
   @media (min-width: 479px) {
-    width: 440px;
+    margin: 0px 0px 20px 0px;
   }
   @media (min-width: 767px) {
-    width: 630px;
+    margin: 0px 0px 60px 0px;
   }
   @media (min-width: 1023px) {
-    width: 440px;
+    margin: 0px 0px 20px 0px;
   }
   @media (min-width: 1439px) {
-    width: 630px;
+    margin: 0px 0px 60px 0px;
   }
 }
 
 .dr__title__left {
+  text-align: left;
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
-  padding: 0px 5px 0px 2px;
-  margin: 0 0px 2px 0;
+  margin: 0 0px 3px 0;
   color: $white;
   @media (min-width: 479px) {
     font-size: 40px;
-    margin: 0px 50px 2px 0px;
+    width: calc(100% - 170px);
+    margin: 0px 0px 0px -10px;
   }
   @media (min-width: 767px) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0px 0px 2px 0px;
+    margin: 0px 0px 0px 5px;
   }
   @media (min-width: 1023px) {
     font-size: 40px;
     line-height: 40px;
+    margin: 0px 0px 0px -5px;
   }
   @media (min-width: 1439px) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0px 0px 2px 0px;
+    margin: 0px 0px 3px 5px;
   }
 }
 
@@ -601,11 +606,10 @@ html{
   font-weight: bold;
   font-size: 15px;
   margin: 0px 0px 8px 0px;
-  padding: 0px 7px 0px 0px;
   color: $white;
   @media (min-width: 479px) {
     font-size: 20px;
-    margin: 0px 0px 3px 0px;
+    margin: 0px 0px 1px 0px;
   }
   @media (min-width: 767px) {
     font-size: 40px;
@@ -622,8 +626,14 @@ html{
 
 .dr__title__right strong {
   color: $blue;
-  font-size: 26px;
+  font-size: 30px;
   @media (min-width: 767px) {
+    font-size: 50px;
+  }
+  @media (min-width: 1023px) {
+    font-size: 30px;
+  }
+  @media (min-width: 1439px) {
     font-size: 50px;
   }
 }
@@ -661,6 +671,9 @@ html{
   }
   @media (min-width: 1023px) {
     width: 390px;
+  }
+  @media (min-width: 1439px) {
+    width: 580px;
   }
 }
 
@@ -700,7 +713,7 @@ html{
   content: counter(list1);
   position: absolute;
   bottom: 0;
-  top: 5px;
+  top: 11px;
   left: -31px;
   background-color: $blue;
   border-radius: 50%;
@@ -724,36 +737,18 @@ html{
 
 .dr__price{
   display: flex;
-  justify-content: flex-start;
-  width: 290px;
+  justify-content: center;
   position: relative;
   @media (min-width: 479px) {
-    width: 440px;
-  }
-  @media (min-width: 767px) {
-    width: 630px;
-  }
-  @media (min-width: 1023px) {
-    width: 440px;
-  }
-  @media (min-width: 1439px) {
-    width: 630px;
+    width: 100%;
   }
   //dr__price__left
   &__left{
-    width: 145px;
-    padding: 0px 0px 0px 10px;
-    @media (min-width: 479px) {
-      width: 220px;
-      padding: 0px 0px 0px 10px;
-    }
-    @media (min-width: 767px) {
-      width: 314px;
-    }
+    width: calc(100%/2);
     &:before{
       content: "";
       position: absolute;
-      left: 0px;
+      left: -10px;
       top: 0;
       width: 290px;
       background-color: $white;
@@ -763,12 +758,15 @@ html{
       }
       @media (min-width: 767px) {
         width: 630px;
+        left: -15px;
       }
       @media (min-width: 1023px) {
         width: 440px;
+        left: -10px;
       }
       @media (min-width: 1439px) {
         width: 630px;
+        left: -15px;
       }
     }
     &:after{
@@ -789,13 +787,16 @@ html{
   }
   //dr__price__right
   &__right{
-    padding: 0px 0px 0px 10px;
+    width: calc(100%/2);
+    padding: 0px 0px 0px 5px;
     @media (min-width: 479px) {
-      width: 220px;
       padding: 0px 0px 0px 10px;
     }
-    @media (min-width: 767px) {
-      width: 341px;
+    @media (min-width: 1023px) {
+      padding: 0px 0px 0px 5px;
+    }
+    @media (min-width: 1439px) {
+      padding: 0px 0px 0px 0px;
     }
   }
 }
@@ -1134,9 +1135,21 @@ html{
 .grid-bg {
   margin: 0px 0px 100px 0px;
   @media (min-width: 1023px) {
-    background: url(../images/desktop/bg_grig_d.png) center no-repeat;
-    background-size: 100% 100%;
-    height: 750px;
+    position: relative;
+  }
+}
+.grid-bg img{
+  display: none;
+  @media (min-width: 1023px) {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 .anchor-grid {
@@ -1437,6 +1450,9 @@ animation: fadeIn 0.8s;
     @media (min-width: 576px) {
       width: 89%;
       margin: 0 auto;
+    }
+    @media (min-width: 1023px) {
+      text-align: left;
     }
     @media (min-width: 1439px) {
       font-size: $fb;
