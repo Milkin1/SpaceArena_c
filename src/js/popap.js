@@ -1,41 +1,48 @@
 // Модальные окна
 
 console.clear();
-const popupText = document.querySelector('.popup-text');
-const popupImage = document.querySelector('.popup-image');
+const popupText = document.querySelector('[data-btn-text_1]').nextElementSibling;
+const popupImage = document.querySelector('[data-btn-image_1]').nextElementSibling;
 
-const popupTextBtn = document.querySelector('[data-btn-text]');
-const popupImageBtn = document.querySelector('[data-btn-image]');
+const popupTextBtn = document.querySelector('[data-btn-text_1]');
+const popupImageBtn = document.querySelector('[data-btn-image_1]');
 
-const popupTextCloseBtn = document.querySelector('[data-popup-text]')
-const popupImageCloseBtn = document.querySelector('[data-popup-image]')
+const popup = document.querySelector('.popup');
 
-const popupTextCloseBtnX = document.querySelector('[data-popup-text-x]')
-const popupImageCloseBtnX = document.querySelector('[data-popup-image-x]')
+const popupTextCloseArea = document.querySelector('[data-popup-text]')
+const popupImageCloseArea = document.querySelector('[data-popup-image]')
 
-const lockBobyScroll = document.body
+const popupCloseTextBtn = document.querySelector('[data-popup-text-x]');
+const popupCloseImgBtn = document.querySelector('[data-popup-image-x]');
+
+const lockBobyScroll = document.body;
 
 popupTextBtn.addEventListener('click', function (e) {
     popupText.classList.add('open');
     lockBobyScroll.classList.add('lock');
-})
+});
+
 popupImageBtn.addEventListener('click', function (e) {
-    popupImage.classList.add('open');
+    popup.classList.add('open');
     lockBobyScroll.classList.add('lock');
-})
-popupTextCloseBtn.addEventListener('click', function (e) {
-    popupText.classList.remove('open');
+});
+
+popupTextCloseArea.addEventListener('click', function (e) {
+    popup.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
-})
-popupImageCloseBtn.addEventListener('click', function (e) {
+});
+
+popupImageCloseArea.addEventListener('click', function (e) {
     popupImage.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
-})
-popupTextCloseBtnX.addEventListener('click', function (e) {
-    popupText.classList.remove('open');
+});
+
+popupCloseTextBtn.addEventListener('click', function (e) {
+    popup.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
-})
-popupImageCloseBtnX.addEventListener('click', function (e) {
-    popupImage.classList.remove('open');
+});
+
+popupCloseImgBtn.addEventListener('click', function (e) {
+    popup.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
-})
+});

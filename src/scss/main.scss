@@ -1427,11 +1427,7 @@ animation: fadeIn 0.8s;
     @media (min-width: 479px) {
       padding: 0px 0px 50px 0px;
     }
-    @media (min-width: 767px) {
-      width: 90%;
-    }
     @media (min-width: 1023px) {
-      width: 50%;
       align-self: flex-start;
     }
   }
@@ -1453,6 +1449,9 @@ animation: fadeIn 0.8s;
       display: block;
       text-align: start;
       padding: 0 0 0 26px;
+    }
+    @media (min-width: 1439px) {
+      padding: 0 0 0 50px;
     }
     @media (min-width: 1439px) {
       font-size: $fxxb;
