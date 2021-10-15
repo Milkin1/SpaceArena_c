@@ -4,10 +4,12 @@ console.clear();
 const popupText = document.querySelector('[data-btn-text_1]').nextElementSibling;
 const popupImage = document.querySelector('[data-btn-image_1]').nextElementSibling;
 
+
 const popupTextBtn = document.querySelector('[data-btn-text_1]');
 const popupImageBtn = document.querySelector('[data-btn-image_1]');
 
-const popup = document.querySelector('.popup');
+const popupText = document.querySelector('.popup-text');
+const popupImg = document.querySelector('.popup-image');
 
 const popupTextCloseArea = document.querySelector('[data-popup-text]')
 const popupImageCloseArea = document.querySelector('[data-popup-image]')
@@ -23,7 +25,7 @@ popupTextBtn.addEventListener('click', function (e) {
 });
 
 popupImageBtn.addEventListener('click', function (e) {
-    popup.classList.add('open');
+    popupImage.classList.add('open');
     lockBobyScroll.classList.add('lock');
 });
 
@@ -32,17 +34,12 @@ popupTextCloseArea.addEventListener('click', function (e) {
     lockBobyScroll.classList.remove('lock');
 });
 
-popupImageCloseArea.addEventListener('click', function (e) {
-    popupImage.classList.remove('open');
-    lockBobyScroll.classList.remove('lock');
-});
-
 popupCloseTextBtn.addEventListener('click', function (e) {
-    popup.classList.remove('open');
+    popupText.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
 });
 
 popupCloseImgBtn.addEventListener('click', function (e) {
-    popup.classList.remove('open');
+    popupImg.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
 });
