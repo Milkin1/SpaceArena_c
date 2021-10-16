@@ -29,7 +29,7 @@ popupImageBtn.addEventListener('click', function (e) {
     lockBobyScroll.classList.add('lock');
 });
 
-popupTextCloseArea.addEventListener('click', function (e) {
+popupTextCloseArea.addEventListener('click', function (e) { 
     popup.classList.remove('open');
     lockBobyScroll.classList.remove('lock');
 });
